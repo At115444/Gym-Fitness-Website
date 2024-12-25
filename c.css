@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.hero {
+    background-image: url('gym-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.hero-content h1,p{
+    color: #5d5252;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #e60000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about p {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.services .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.services .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.services .card h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+
+.services .card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.timetable {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #e60000;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.contact p {
+    font-size: 1.2rem;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333; /* Background color for the marquee */
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    padding: 0 20px; /* Add spacing between repetitions */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
